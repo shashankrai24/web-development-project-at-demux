@@ -5,7 +5,7 @@
         <h1>Results are</h1>
         <div class="row">
             <%movie['Search'].forEach(function(movies){%>
-                <div class="card" style="width: 18rem;">
+                <div class="card" class="border border-warning"style="width: 18rem;">
                     <img src="<%=movies.Poster%>" class="card-img-top" alt=<%=movies.Title%>>
                     <div class="card-body" style="background-color:yellow">
                       <h5 class="card-title"><%=movies.Title%></h5>
