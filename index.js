@@ -10,6 +10,7 @@ const app= express()
 app.set("view engine", "ejs") //interviewer kyo kya batana hai view engine ke bare mein ayr terminal mein yeh kya aa raha hai aur console.log nahi ho raha hai
 const dotenv=require('dotenv')
 dotenv.config()
+app.use('/public',express.static('public'));
 
 app.get("/", (req, res)=>{
     res.render("homepage")
